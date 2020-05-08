@@ -1,4 +1,4 @@
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 974px) {
     .nav {
         background-color: $white;
         display: flex;
@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 779px) {
     .nav {
         background-color: $white;
         // display: grid;
@@ -80,6 +80,16 @@
 
         .request-btn-wrapper {
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav {
+        .site-logo {
+            img {
+                width: 120px;
+            }
         }
     }
 }

@@ -13,12 +13,11 @@ body {
 }
 
 .nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   overflow: hidden;
   top: 0;
   left: 0;
-  z-index: -1;
+  opacity: 1;
   width: 100%;
   background-color: white;
   display: -webkit-box;
@@ -95,6 +94,10 @@ body {
   visibility: hidden;
 }
 
+main {
+  margin-top: 90px;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -143,7 +146,7 @@ body {
   color: #3e52a3;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 974px) {
   .nav {
     background-color: white;
     display: -webkit-box;
@@ -212,7 +215,7 @@ body {
   }
 }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 779px) {
   .nav {
     background-color: white;
     padding: 0 40px 8px 0;
@@ -231,6 +234,12 @@ body {
   }
   .nav .request-btn-wrapper {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav .site-logo img {
+    width: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */
