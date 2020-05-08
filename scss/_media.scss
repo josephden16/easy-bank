@@ -1,4 +1,4 @@
-@media screen and (max-width: 974px) {
+@media screen and (max-width: 985px) {
     .nav {
         background-color: $white;
         display: flex;
@@ -51,18 +51,18 @@
         }
 
         .hamburger-wrapper {
-            img {
+            .hamburger {
                 visibility: hidden;
             }
         }
     }
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 790px) {
     .nav {
         background-color: $white;
-        // display: grid;
-        // grid-template-columns: 70% 30%;
+        display: grid;
+        grid-template-columns: 70% 30%;
         padding: 0 40px 8px 0;
         height: 70px;
         .site-logo {
@@ -70,7 +70,7 @@
             margin-left: 10%;
             margin-top: 7px;
             img {
-                width: 180px;
+                width: 175px;
             }
         }
 
@@ -81,15 +81,38 @@
         .request-btn-wrapper {
             display: none;
         }
+        .hamburger-wrapper {
+            margin-left: 70px;
+            margin-top: 2px;
+            .hamburger {
+                visibility: visible;
+                padding: 8px;
+                content: url("../images/icon-hamburger.svg");
+            }
+        }
     }
 }
 
 @media screen and (max-width: 400px) {
     .nav {
+        background-color: $white;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding: 0 40px 8px 0;
         height: 60px;
         .site-logo {
+            margin-left: 15px;
             img {
                 width: 120px;
+            }
+        }
+        .hamburger-wrapper {
+            margin-left: 40px;
+            margin-top: 2px;
+            .hamburger {
+                content: url("../images/icon-hamburger.svg");
+                visibility: visible;
+                padding: 8px;
             }
         }
     }

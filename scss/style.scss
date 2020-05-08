@@ -91,7 +91,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     opacity: 0;
     transform: scale(1.1);
@@ -100,13 +100,26 @@ main {
 }
 .modal-content {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 1rem 1.5rem;
-    width: 24rem;
+    padding: 1rem 1.5rem;    
+    width: 70%;
     border-radius: 0.5rem;
+
+    ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        li {
+            padding: 10px;
+            a {
+                color: $darkBlue;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .show-modal {
@@ -114,6 +127,10 @@ main {
     visibility: visible;
     transform: scale(1);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, trasnform 0.25s;
+}
+
+.close {
+    content: url("../images/icon-close.svg");
 }
 
 .attribution {
