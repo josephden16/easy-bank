@@ -1,0 +1,85 @@
+@media screen and (max-width: 950px) {
+    .nav {
+        background-color: $white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 0 0 8px 0;
+        height: 80px;
+        .site-logo {
+            width: 20%;
+            margin-left: 20px;
+            margin-top: 7px;
+            img {
+                width: 140px;
+            }
+        }
+
+        .site-links {
+            display: inline-block;
+            font-weight: $fw-2;
+            margin-left: 5px;
+            cursor: pointer;
+            span {
+                a {
+                    padding: 27px 13px;
+                    text-decoration: none;
+                    color: $grayishBlue;
+                    &:hover {
+                        color: #000;
+                        border-image: linear-gradient(to right, $limeGreen 0%, $brightCyan 100%);
+                        border-bottom: 3px solid transparent;
+                        border-image-slice: 1;
+                    }
+                }
+            }
+        }
+
+        .request-btn-wrapper {
+            margin-left: 6%;
+            .request-btn {
+                @include button();
+                padding: 18px;
+                border-radius: 30px;
+                width: 150px;
+                font-size: 15px;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .hamburger-wrapper {
+            img {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .nav {
+        background-color: $white;
+        // display: grid;
+        // grid-template-columns: 70% 30%;
+        padding: 0 40px 8px 0;
+        height: 70px;
+        .site-logo {
+            width: 20%;
+            margin-left: 10%;
+            margin-top: 7px;
+            img {
+                width: 180px;
+            }
+        }
+
+        .site-links {
+            display: none;
+        }
+
+        .request-btn-wrapper {
+            display: none;
+        }
+    }
+}
