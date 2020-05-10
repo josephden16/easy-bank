@@ -34,7 +34,7 @@ body {
     box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.048);
     .site-logo {
         width: 20%;
-        margin-left: 10%;
+        margin-left: 6%;
         margin-top: 7px;
         img {
             width: 140px;
@@ -80,7 +80,35 @@ body {
 }
 
 main {
-    margin-top: 70px;
+    margin-top: -30px;
+}
+
+.intro {
+    // display: grid;
+    // grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: $veryLightGray;
+    text-align: center;
+
+    &__mockupImg {
+        background-size: cover;
+        background-image: url("../images/bg-intro-mobile.svg");
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        margin: 39px 4px;
+    }
+}
+
+.services {
+    background-color: $lightGrayishBlue;
+    margin-top: -23px;
+    z-index: -1;
 }
 
 // modal styles
@@ -104,7 +132,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 1rem 1.5rem;    
+    padding: 1rem 1.5rem;
     width: 70%;
     border-radius: 0.5rem;
 
