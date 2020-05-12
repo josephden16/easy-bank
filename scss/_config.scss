@@ -12,8 +12,17 @@ $fw-2: 400;
 $darkBlue: hsl(233, 26%, 24%);
 $limeGreen: hsl(136, 65%, 51%);
 $brightCyan: hsl(192, 70%, 51%);
-// Neutral 
+// Neutral
 $grayishBlue: hsl(233, 8%, 62%);
 $lightGrayishBlue: hsl(220, 16%, 96%);
 $veryLightGray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
+
+fontawesome specific styles
+i.fab {
+    border: 1px solid red;
+}
+
+.fa-facebook {
+    color: rgb(59, 91, 152);
+}

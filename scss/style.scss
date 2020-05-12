@@ -93,7 +93,7 @@ main {
     background-color: $veryLightGray;
     margin-top: -70px;
     width: 100%;
-    // z-index: 9999;
+    padding-bottom: 34px;
 }
 
 .intro {
@@ -133,8 +133,114 @@ main {
 
 .services {
     background-color: $lightGrayishBlue;
+    text-align: center;
+    &__info {
+        padding: 20px;
+        margin: auto;
+        &-title {
+            color: $darkBlue;
+            font-weight: 200;
+            font-size: 2rem;
+            line-height: 2.3rem;
+        }
+        &-content {
+            color: $grayishBlue;
+            line-height: 1.7rem;
+        }
+    }
+
+    &__services {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 15px;
+        gap: 20px;
+        &-cards {
+            text-align: center;
+            .services-icons {
+                width: 25%;
+            }
+            .title {
+                color: $darkBlue;
+                font-weight: 100;
+            }
+            .content {
+                color: $grayishBlue;
+                line-height: 1.9rem;
+            }
+        }
+    }
 }
 
+.articles {
+    background-color: $veryLightGray;
+    margin-bottom: 83px;
+    &__header {
+        padding: 40px;
+        color: $darkBlue;
+        font-weight: 200;
+        font-size: 2rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 42px;
+        &-cards {
+            border-radius: 8px;
+            background-color: $white;
+            width: 88%;
+            margin: auto;
+            .articles-img {
+                width: 100%;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+            &-content {
+                padding: 18px;
+                .author {
+                    color: $grayishBlue;
+                }
+                .title {
+                    color: $darkBlue;
+                    font-weight: 100;
+                }
+                .title:hover {
+                    color: $limeGreen;
+                    cursor: pointer;
+                }
+                .content {
+                    color: $grayishBlue;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $darkBlue;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding: 23px;
+    .social {
+        padding: 19px 0;
+        &__icons {
+            span {
+                padding: 8px;
+            }
+        }
+    }
+    .links {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+                color: $white;
+                padding: 8px;
+            }
+        }
+    }
+}
 // modal styles
 // not mines, credit to sabe.io
 .modal {
@@ -195,3 +301,4 @@ main {
 }
 
 @import "media";
+//  TODO: work on the services section
