@@ -14,7 +14,7 @@
 
 <body>
   <nav class="nav">
-    <div class="site-logo"><img src="images/logo.svg" alt="easy bank"></div>
+    <div class="site-logo-wrapper"><img src="images/logo.svg" alt="easy bank" class="site-logo"></div>
     <div class="site-links">
       <span><a href="#">Home</a></span>
       <span><a href="#">About</a></span>
@@ -41,16 +41,19 @@
   </div>
   <main>
     <div class="intro-container">
-      <section class="intro">
-        <div class="intro__mockupImg"><img src="images/image-mockups.png" alt="" width="40%"></div>
-        <div class="intro__info">
-          <h1>Next Generation Digital Banking</h1>
-          <p class="faded-text">Take your financial life online. Your Easybank account will be a one-stop-shop
-            for spending, saving, budgeting, investing, and much more.
-          </p>
-          <button>Request Invite</button>
+      <div class="intro">
+        <div class="intro__img">
+          <img src="images/image-mockups.png" alt="mockups" class="mockup-img">
         </div>
-      </section>
+        <div class="intro__text-content">
+          <h2 class="intro-title">Next generation digital banking</h2>
+          <p class="intro-body">
+            Take your financial life online. Your Easybank will be a one-stop shop for spending, saving,
+            budgeting, investing,  and much more. 
+          </p>
+          <button class="request-btn">Request Invite</button>
+        </div>
+      </div>
     </div>
     <section class="services">
       <div class="services__info">
@@ -61,25 +64,25 @@
       </div>
       <div class="services__services">
         <div class="services__services-cards">
-          <img src="images/icon-api.svg" alt="" width="40%">
+          <img src="images/icon-api.svg" alt="" width="10%">
           <h2>Online Banking</h2>
           <p> Our modern web and mobile applications allow you to keep track of your finances
             wherever you are in the world</p>
         </div>
         <div class="services__services-cards">
-          <img src="images/icon-api.svg" width="40%" alt="">
+          <img src="images/icon-api.svg" width="10%" alt="">
           <h2>Online Banking</h2>
           <p> Our modern web and mobile applications allow you to keep track of your finances
             wherever you are in the world</p>
         </div>
         <div class="services__services-cards">
-          <img src="images/icon-api.svg" width="40%" alt="">
+          <img src="images/icon-api.svg" width="10%" alt="">
           <h2>Online Banking</h2>
           <p> Our modern web and mobile applications allow you to keep track of your finances
             wherever you are in the world</p>
         </div>
         <div class="services__services-cards">
-          <img src="images/icon-api.svg" width="40%" alt="">
+          <img src="images/icon-api.svg" width="10%" alt="">
           <h2>Online Banking</h2>
           <p> Our modern web and mobile applications allow you to keep track of your finances
             wherever you are in the world</p>
@@ -91,7 +94,7 @@
       <div class="articles__header">Latest Articles</div>
       <div class="articles__container">
         <div class="articles__container-cards">
-          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="40%" alt="currency">
+          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="10%" alt="currency">
           </div>
           <div class="articles__container-cards-content">
             <small>By Claire Robinson</small>
@@ -102,7 +105,7 @@
         </div>
 
         <div class="articles__container-cards">
-          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="40%" alt="currency">
+          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="10%" alt="currency">
           </div>
           <div class="articles__container-cards-content">
             <small>By Claire Robinson</small>
@@ -113,7 +116,7 @@
         </div>
 
         <div class="articles__container-cards">
-          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="40%" alt="currency">
+          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="10%" alt="currency">
           </div>
           <div class="articles__container-cards-content">
             <small>By Claire Robinson</small>
@@ -124,7 +127,7 @@
         </div>
 
         <div class="articles__container-cards">
-          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="40%" alt="currency">
+          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="10%" alt="currency">
           </div>
           <div class="articles__container-cards-content">
             <small>By Claire Robinson</small>
@@ -135,7 +138,7 @@
         </div>
 
         <div class="articles__container-cards">
-          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="40%" alt="currency">
+          <div class="articles__container-cards-img"><img src="images/image-currency.jpg" width="10%" alt="currency">
           </div>
           <div class="articles__container-cards-content">
             <small>By Claire Robinson</small>
@@ -149,7 +152,7 @@
 
     <footer class="footer">
       <div class="social">
-        <div class="social__site-logo"><img src="images/logo.svg" width="40%" alt="easy bank"></div>
+        <div class="social__site-logo"><img src="images/logo.svg" width="10%" alt="easy bank"></div>
         <div class="social__icons">
           <span><img src="images/icon-facebook.svg" alt="facebook"></span>
           <span><img src="images/icon-youtube.svg" alt="You Tube"></span>

@@ -15,6 +15,11 @@ body {
     box-sizing: border-box;
     font-family: PublicSans;
     overflow-x: hidden;
+    background-color: $veryLightGray;
+}
+
+.faded-text {
+    color: $grayishBlue;
 }
 
 .nav {
@@ -31,12 +36,11 @@ body {
     align-items: center;
     padding: 10px 0 px 0;
     height: 80px;
-    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.048);
-    .site-logo {
+    .site-logo-wrapper {
         width: 20%;
         margin-left: 6%;
         margin-top: 7px;
-        img {
+        .site-logo {
             width: 140px;
         }
     }
@@ -80,35 +84,55 @@ body {
 }
 
 main {
-    margin-top: -30px;
+    margin-top: 84px;
+}
+.intro-container {
+    background-image: url("../images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $veryLightGray;
+    margin-top: -70px;
+    width: 100%;
+    // z-index: 9999;
 }
 
 .intro {
-    // display: grid;
-    // grid-template-columns: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: $veryLightGray;
+    display: grid;
+    grid-template-columns: 100%;
     text-align: center;
-
-    &__mockupImg {
-        background-size: cover;
-        background-image: url("../images/bg-intro-mobile.svg");
-        img {
+    &__img {
+        width: 100%;
+        .mockup-img {
             width: 100%;
         }
     }
-
-    &__info {
-        margin: 39px 4px;
+    &__text-content {
+        margin-top: 23px;
+        padding: 20px;
+        .intro-title {
+            color: $darkBlue;
+            font-size: 2rem;
+            font-weight: 100;
+        }
+        .intro-body {
+            color: $grayishBlue;
+            line-height: 1.7rem;
+        }
+        .request-btn {
+            @include button();
+            padding: 16px;
+            border-radius: 30px;
+            width: 180px;
+            font-size: 15px;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
 }
 
 .services {
     background-color: $lightGrayishBlue;
-    margin-top: -23px;
-    z-index: -1;
 }
 
 // modal styles
