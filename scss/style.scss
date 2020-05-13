@@ -155,6 +155,8 @@ main {
         margin: 15px;
         gap: 20px;
         &-cards {
+            margin: 0;
+            padding: 0;
             text-align: center;
             .services-icons {
                 width: 25%;
@@ -201,8 +203,14 @@ main {
                     color: $grayishBlue;
                 }
                 .title {
-                    color: $darkBlue;
-                    font-weight: 100;
+                    a {
+                        color: $darkBlue;
+                        font-weight: 100;
+                        text-decoration: none;
+                        &:hover {
+                            color: $limeGreen;
+                        }
+                    }
                 }
                 .title:hover {
                     color: $limeGreen;
@@ -225,19 +233,48 @@ main {
     .social {
         padding: 19px 0;
         &__icons {
-            span {
-                padding: 8px;
+            a {
+                padding: 8px 12px 8px 0;
+                color: white;
+                &:hover {
+                    color: $limeGreen;
+                }
             }
         }
     }
     .links {
+        padding: 19px 0;
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
             li {
-                color: $white;
                 padding: 8px;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    &:hover {
+                        color: $limeGreen;
+                    }
+                }
             }
+        }
+    }
+    .others {
+        .request-btn {
+            @include button();
+            padding: 16px;
+            border-radius: 30px;
+            width: 180px;
+            font-size: 15px;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        &__copyright {
+            padding: 18px;
+            color: $grayishBlue;
         }
     }
 }
@@ -265,11 +302,11 @@ main {
     padding: 1rem 1.5rem;
     width: 70%;
     border-radius: 0.5rem;
-
     ul {
         list-style-type: none;
         text-align: center;
         padding: 0;
+        margin: 0;
         li {
             padding: 10px;
             a {
@@ -279,6 +316,15 @@ main {
             }
         }
     }
+}
+.attribution {
+    font-size: 16px;
+    color: $lightGrayishBlue;
+    background-color: $darkBlue;
+    text-align: center;
+}
+.attribution a {
+    color: $grayishBlue;
 }
 
 .show-modal {
@@ -291,14 +337,5 @@ main {
 .close {
     content: url("../images/icon-close.svg");
 }
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 @import "media";
 //  TODO: work on the services section

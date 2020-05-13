@@ -75,7 +75,7 @@
                 font-weight: 200;
                 font-size: 2rem;
                 line-height: 2.3rem;
-            }        
+            }
             &-content {
                 color: $grayishBlue;
                 line-height: 1.7rem;
@@ -83,7 +83,7 @@
                 margin: 34px auto;
             }
         }
-    
+
         &__services {
             display: grid;
             grid-template-columns: 50% 50%;
@@ -102,7 +102,7 @@
                     color: $grayishBlue;
                     line-height: 1.9rem;
                     width: 80%;
-                    margin:43px auto;
+                    margin: 43px auto;
                 }
             }
         }
@@ -116,7 +116,7 @@
             font-size: 2rem;
             text-align: center;
         }
-    
+
         &__container {
             display: grid;
             grid-template-columns: 50% 50%;
@@ -237,7 +237,7 @@
             font-size: 2rem;
             text-align: center;
         }
-    
+
         &__container {
             display: grid;
             grid-template-columns: 100%;
@@ -327,7 +327,7 @@
             font-size: 2rem;
             text-align: center;
         }
-    
+
         &__container {
             display: grid;
             grid-template-columns: 100%;
@@ -451,7 +451,7 @@
             align-self: center;
             width: 80%;
             margin: 23px 80px;
-            padding: 20px  20px 0  30px;
+            padding: 20px 20px 0 30px;
             text-align: left;
             .intro-title {
                 color: $darkBlue;
@@ -490,7 +490,7 @@
                 font-weight: 200;
                 font-size: 2.7rem;
                 line-height: 2.3rem;
-            }        
+            }
             &-content {
                 color: $grayishBlue;
                 line-height: 1.7rem;
@@ -500,7 +500,7 @@
                 margin: 0;
             }
         }
-    
+
         &__services {
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
@@ -532,7 +532,7 @@
             font-size: 2.5rem;
             text-align: left;
         }
-    
+
         &__container {
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
@@ -565,6 +565,65 @@
                         color: $grayishBlue;
                     }
                 }
+            }
+        }
+    }
+
+    .footer {
+        background-color: $darkBlue;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        text-align: center;
+        padding: 23px;
+        .social {
+            margin-top: 39%;
+            padding: 19px 0;
+            &__icons {
+                a {
+                    padding: 8px 12px 8px 0;
+                    color: white;
+                    &:hover {
+                        color: $limeGreen;
+                    }
+                }
+            }
+        }
+        .links {
+            padding: 19px 0;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-top: 22%;
+            text-align: left;
+            div {
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        color: $white;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+        .others {
+            margin-top: 26%;
+            text-align: right;
+            padding: 0 53px 0 0;
+            .request-btn {
+                @include button();
+                padding: 16px;
+                border-radius: 30px;
+                width: 180px;
+                font-size: 15px;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            &__copyright {
+                padding: 18px 0;
+                color: $grayishBlue;
             }
         }
     }

@@ -3,15 +3,6 @@
   font-family: PublicSans;
 }
 
-fontawesome specific styles
-i.fab {
-  border: 1px solid red;
-}
-
-.fa-facebook {
-  color: #3b5b98;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -203,6 +194,8 @@ main {
 }
 
 .services__services-cards {
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -261,9 +254,14 @@ main {
   color: #9698a6;
 }
 
-.articles__container-cards-content .title {
+.articles__container-cards-content .title a {
   color: #2d314d;
   font-weight: 100;
+  text-decoration: none;
+}
+
+.articles__container-cards-content .title a:hover {
+  color: #31d35c;
 }
 
 .articles__container-cards-content .title:hover {
@@ -289,18 +287,59 @@ main {
   padding: 19px 0;
 }
 
-.footer .social__icons span {
-  padding: 8px;
+.footer .social__icons a {
+  padding: 8px 12px 8px 0;
+  color: white;
+}
+
+.footer .social__icons a:hover {
+  color: #31d35c;
+}
+
+.footer .links {
+  padding: 19px 0;
 }
 
 .footer .links ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer .links ul li {
-  color: white;
   padding: 8px;
+}
+
+.footer .links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .links ul li a:hover {
+  color: #31d35c;
+}
+
+.footer .others .request-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  color: white;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 30px;
+  width: 180px;
+  font-size: 15px;
+}
+
+.footer .others .request-btn:hover {
+  opacity: 0.7;
+}
+
+.footer .others__copyright {
+  padding: 18px;
+  color: #9698a6;
 }
 
 .modal {
@@ -337,6 +376,7 @@ main {
   list-style-type: none;
   text-align: center;
   padding: 0;
+  margin: 0;
 }
 
 .modal-content ul li {
@@ -347,6 +387,17 @@ main {
   color: #2d314d;
   text-decoration: none;
   font-weight: 500;
+}
+
+.attribution {
+  font-size: 16px;
+  color: #f3f4f6;
+  background-color: #2d314d;
+  text-align: center;
+}
+
+.attribution a {
+  color: #9698a6;
 }
 
 .show-modal {
@@ -360,15 +411,6 @@ main {
 
 .close {
   content: url("../images/icon-close.svg");
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
 }
 
 @media screen and (min-width: 731px) {
@@ -845,7 +887,7 @@ main {
         align-self: center;
     width: 80%;
     margin: 23px 80px;
-    padding: 20px  20px 0  30px;
+    padding: 20px 20px 0 30px;
     text-align: left;
   }
   .intro__text-content .intro-title {
@@ -970,6 +1012,69 @@ main {
     font-weight: 100;
   }
   .articles__container-cards-content .content {
+    color: #9698a6;
+  }
+  .footer {
+    background-color: #2d314d;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    text-align: center;
+    padding: 23px;
+  }
+  .footer .social {
+    margin-top: 39%;
+    padding: 19px 0;
+  }
+  .footer .social__icons a {
+    padding: 8px 12px 8px 0;
+    color: white;
+  }
+  .footer .social__icons a:hover {
+    color: #31d35c;
+  }
+  .footer .links {
+    padding: 19px 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    margin-top: 22%;
+    text-align: left;
+  }
+  .footer .links div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .links div ul li {
+    color: white;
+    padding: 8px;
+  }
+  .footer .others {
+    margin-top: 26%;
+    text-align: right;
+    padding: 0 53px 0 0;
+  }
+  .footer .others .request-btn {
+    background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 30px;
+    width: 180px;
+    font-size: 15px;
+  }
+  .footer .others .request-btn:hover {
+    opacity: 0.7;
+  }
+  .footer .others__copyright {
+    padding: 18px 0;
     color: #9698a6;
   }
 }
