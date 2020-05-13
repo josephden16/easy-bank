@@ -287,13 +287,8 @@ main {
   padding: 19px 0;
 }
 
-.footer .social__icons a {
-  padding: 8px 12px 8px 0;
-  color: white;
-}
-
-.footer .social__icons a:hover {
-  color: #31d35c;
+.footer .social__icons img {
+  padding: 8px 16px 8px 0;
 }
 
 .footer .links {

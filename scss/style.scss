@@ -233,12 +233,8 @@ main {
     .social {
         padding: 19px 0;
         &__icons {
-            a {
-                padding: 8px 12px 8px 0;
-                color: white;
-                &:hover {
-                    color: $limeGreen;
-                }
+            img {
+                padding: 8px 16px 8px 0;
             }
         }
     }
