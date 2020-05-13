@@ -576,8 +576,9 @@
         text-align: center;
         padding: 23px;
         .social {
+            text-align: left;
             margin-top: 39%;
-            padding: 19px 0;
+            padding: 0px 70px;
             &__icons {
                 a {
                     padding: 8px 12px 8px 0;
@@ -586,6 +587,10 @@
                         color: $limeGreen;
                     }
                 }
+            }
+            &__site-logo {
+                margin: 0;
+                margin-bottom: 22px;
             }
         }
         .links {

@@ -288,7 +288,11 @@ main {
 }
 
 .footer .social__icons img {
-  padding: 8px 16px 8px 0;
+  padding: 8px 16px 8px 8px;
+}
+
+.footer .social__site-logo {
+  margin: 12px auto;
 }
 
 .footer .links {
@@ -1019,8 +1023,9 @@ main {
     padding: 23px;
   }
   .footer .social {
+    text-align: left;
     margin-top: 39%;
-    padding: 19px 0;
+    padding: 0px 70px;
   }
   .footer .social__icons a {
     padding: 8px 12px 8px 0;
@@ -1028,6 +1033,10 @@ main {
   }
   .footer .social__icons a:hover {
     color: #31d35c;
+  }
+  .footer .social__site-logo {
+    margin: 0;
+    margin-bottom: 22px;
   }
   .footer .links {
     padding: 19px 0;
