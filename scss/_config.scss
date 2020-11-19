@@ -1,10 +1,12 @@
 // font configs
 $fw-1: 300;
 $fw-2: 400;
-
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
-    src: url("../fonts/PublicSans-VariableFont_wght.ttf");
-    font-family: PublicSans;
+  src: url("../fonts/PublicSans-VariableFont_wght.ttf");
+  font-family: PublicSans;
 }
 
 // colors
