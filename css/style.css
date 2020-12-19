@@ -992,9 +992,6 @@ main {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
     margin: 22px;
   }
   .articles__container-cards {

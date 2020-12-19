@@ -3,6 +3,7 @@ $fw-1: 300;
 $fw-2: 400;
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 @font-face {
   src: url("../fonts/PublicSans-VariableFont_wght.ttf");

@@ -34,7 +34,6 @@ gsap.from(".services__services", {
   },
   opacity: 0,
   duration: 1,
-  x: "200%",
   ease: "slow"
 });
 
@@ -44,7 +43,7 @@ gsap.from(".intro__text-content", {
     toggleActions: "restart reverse restart reverse",
     start: "top bottom",
   },
-  x: "-100%",
+  y: "-10%",
   opacity: 0,
   duration: 0.7
 })
@@ -54,7 +53,7 @@ gsap.from(".intro__img", {
     trigger: ".intro__img",
     toggleActions: "restart reverse restart reverse",
   },
-  x: "100%",
   opacity: 0,
+  y: "-10%",
   duration: 0.7
 });
